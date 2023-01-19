@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #02c3bd;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    min-width: 320px;
+}
+
+h1 {
+    color: rgba(3, 49, 36, 0.7);
+    font-size: 10rem;
+    text-align: center;
+    opacity: 0.5;
+}
+
+form {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    width: 90vw;
+    max-width: 400px;
+}
+
+input {
+    border: none;
+    color: #000;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    display: block;
+    width: 100%;
+}
+
+input:focus {
+ outline-color: rgba(3, 49, 36, 0.7)   
+}
+
+.input::placeholder {
+    color: #d5d5d5
+}
+
+.todos {
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.todos li {
+    color: #03312E;
+    border-top:  1px solid #e5e5e5;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-text {
+    word-wrap: break-word;
+    width: auto;
+}
+
+ .completed .todo-text {
+    color: #b6b6b6;
+    text-decoration: line-through;
+}
+
+.fa-pen-to-square,
+.fa-check,
+.fa-xmark {
+    color: #d5d5d5;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+}
+
+.crud {
+    display: flex;
+    min-width: 48px;
+    justify-content: space-between;
+}
+.fa-pen-to-square:hover {
+    color: #6CA4C8;
+}
+.fa-check:hover {
+    color: green;
+}
+.fa-xmark:hover {
+    color: red
+}
+
+small {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+@media (max-width: 400px) { 
+    h1 {
+        font-size: 8rem;
+    }
+ }
